@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="src/main.js"></script>
+    <title>Notelligient: The Better Notetaking Method</title>
+</head>
+<body>
+    <header>
+        <p class="logo">Notelligient</p>
+        <button class="logbtn" id="login">Log In</button>
+        <button class="logbtn hide" id="logout">Log Out</button>
+    </header>
+<dialog id="myDialog">
+    <div class="form-popup" id="myForm">
+        <form id="signup" class="form-container" name="form">
+            <label for="email"><b>Email</b></label>
+            <input type="email" class="email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" class="psw" name="psw" required>
+            <button class="trigger" id="signin-btn">Need to Signin?</button>
+            <button type="submit" class="btn">Signup</button>
+            <button type="button" class="btn cancel" id="cancel1">Cancel</button>
+        </form>
+        <form id="signin" class="form-container" name="form">
+            <label for="email"><b>Email</b></label>
+            <input type="email" class="email" id="email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" class="psw" id="password" name="psw" required>
+            <button class="trigger" id="signup-btn">Need to signup?</button>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" id="cancel2">Cancel</button>
+        </form>
+    </div>
+</dialog>
+<div id="snackbar"></div>
+    <div id="app">
+        <button type="button" class="add-note hide">+</button>
+    </div>
+</body>
+</html>

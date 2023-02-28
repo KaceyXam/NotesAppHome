@@ -130,8 +130,6 @@ function signingOut() {
 			addNoteButton.classList.add("hide");
 			uid = undefined;
 			derender();
-			console.log(user);
-			console.log(uid);
 		})
 		.catch((error) => {
 			console.log(error);
